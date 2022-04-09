@@ -320,9 +320,10 @@ class OtpFieldController {
       widget.onChanged!(newPin);
     }
   }
-  List<String> getOtpAsList{
-   if(_otpTextFieldState._pin!=null)return _otpTextFieldState._pin;
-   else return ['','','','','',''];
+  void getOtpAsList{
+//    if(_otpTextFieldState._pin!=null)return _otpTextFieldState._pin;
+//    else return ['','','','','',''];
+    pint("HELLO");
   }
   void setFocus(int position) {
     final maxIndex = _otpTextFieldState.widget.length - 1;
